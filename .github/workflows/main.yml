@@ -1,4 +1,4 @@
-No
+
 name: Sus
 on:
   workflow_dispatch:
