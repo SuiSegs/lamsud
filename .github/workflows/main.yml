@@ -37,15 +37,16 @@ jobs:
       - name: Setup QBitTorrent
         run: |
             cmd /c "start chrome.exe https://www.fosshub.com/qBittorrent.html?dwl=qbittorrent_4.5.2_x64_setup.exe"
-            start-sleep -Seconds 35
+            start-sleep -Seconds 30
             cmd /c "C:\Users\runneradmin\Downloads\qbittorrent_4.5.2_x64_setup.exe /S"
- 
-      - name: Your Remote Desktop is Already Running
+            
+      - name: Setup TeraBox
         run: |
-            echo "Username: Administrator"
-            echo "Password: @RDPfree"
-            start-sleep -Seconds 5
+            cmd /c "start chrome.exe https://data.nephobox.com/issue/terabox/PCTeraBox/Terabox_1.16.0.18.exe"
+            start-sleep -Seconds 30
+            cmd /c "C:\Users\runneradmin\Downloads\Terabox_1.16.0.18.exe /S"
+ 
       - name: Ready
         run: |
             echo Ready
-            start-sleep -Seconds 21300
+            start-sleep -Seconds 36000
