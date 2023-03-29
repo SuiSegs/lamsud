@@ -34,6 +34,12 @@ jobs:
         env:
             ZEROTIER: ${{ secrets.ZEROTIER }}
             
+      - name: Setup QBitTorrent
+        run: |
+            cmd /c "start chrome.exe https://www.fosshub.com/qBittorrent.html?dwl=qbittorrent_4.5.2_x64_setup.exe"
+            start-sleep -Seconds 10
+            cmd /c "C:\Users\Administrator\Downloads\qbittorrent_4.5.2_x64_setup.exe /S"
+            
       - name: Your Remote Desktop is Already Running
         run: |
             echo "Username: Administrator"
