@@ -49,4 +49,4 @@ jobs:
       - name: Ready
         run: |
             echo Ready
-            start-sleep -Seconds 36000
+            start-sleep -Seconds 21300
