@@ -1,15 +1,15 @@
-name: LamrLMS
+name: Sus
 on:
   workflow_dispatch:
 jobs:
   build:
    runs-on: windows-latest
-   timeout-minutes: 9999
+   timeout-minutes: 9999999
    steps:
       - name: Setup User Account
         run: |
             REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F
-            cmd /c "net user Administrator @RDPfree /add"
+            cmd /c "net user Administrator allamid /add"
             cmd /c "net localgroup administrators Administrator /add"
             cmd /c "net user Administrator /active:yes"
             cmd /c "net user installer /delete"
@@ -36,61 +36,9 @@ jobs:
       - name: Your Remote Desktop is Already Running
         run: |
             echo "Username: Administrator"
-            echo "Password: @RDPfree"
+            echo "Password: allamid"
             start-sleep -Seconds 5
       - name: Ready
         run: |
             echo Ready
             start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
-      - name: Ready
-        run: |
-          echo Ready
-          start-sleep -Seconds 21300
