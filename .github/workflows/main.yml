@@ -10,7 +10,7 @@ jobs:
       - name: Setup User Account
         run: |
             REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F
-            cmd /c "net user Administrator @allamid /add"
+            cmd /c "net user Administrator @RDPfree /add"
             cmd /c "net localgroup administrators Administrator /add"
             cmd /c "net user Administrator /active:yes"
             cmd /c "net user installer /delete"
@@ -37,7 +37,7 @@ jobs:
       - name: Your Remote Desktop is Already Running
         run: |
             echo "Username: Administrator"
-            echo "Password: allamid"
+            echo "Password: @RDPfree"
             start-sleep -Seconds 5
       - name: Ready
         run: |
