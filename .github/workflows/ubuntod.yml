@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: Update
-         run: apt update
+         run: |
+             su
+             apt update
