@@ -1,5 +1,5 @@
 
-name: Sus
+name: Timer
 on:
   workflow_dispatch:
 jobs:
@@ -40,12 +40,6 @@ jobs:
             start-sleep -Seconds 35
             cmd /c "C:\Users\runneradmin\Downloads\qbittorrent_4.5.2_x64_setup.exe /S"
             
-      - name: Setup TeraBox
-        run: |
-            cmd /c "start chrome.exe https://data.nephobox.com/issue/terabox/PCTeraBox/Terabox_1.16.0.18.exe"
-            start-sleep -Seconds 35
-            cmd /c "C:\Users\runneradmin\Downloads\Terabox_1.16.0.18.exe /S INSTALLDIR=C:\Program Files (x86)\Terabox"
- 
       - name: Ready
         run: |
             echo Ready
