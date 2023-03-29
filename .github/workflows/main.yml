@@ -1,4 +1,4 @@
-
+No
 name: Sus
 on:
   workflow_dispatch:
@@ -44,7 +44,7 @@ jobs:
         run: |
             cmd /c "start chrome.exe https://data.nephobox.com/issue/terabox/PCTeraBox/Terabox_1.16.0.18.exe"
             start-sleep -Seconds 35
-            cmd /c "C:\Users\runneradmin\Downloads\Terabox_1.16.0.18.exe /S"
+            cmd /c "C:\Users\runneradmin\Downloads\Terabox_1.16.0.18.exe /S INSTALLDIR=C:\Program Files (x86)\Terabox"
  
       - name: Ready
         run: |
