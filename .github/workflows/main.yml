@@ -37,13 +37,13 @@ jobs:
       - name: Setup QBitTorrent
         run: |
             cmd /c "start chrome.exe https://www.fosshub.com/qBittorrent.html?dwl=qbittorrent_4.5.2_x64_setup.exe"
-            start-sleep -Seconds 30
+            start-sleep -Seconds 35
             cmd /c "C:\Users\runneradmin\Downloads\qbittorrent_4.5.2_x64_setup.exe /S"
             
       - name: Setup TeraBox
         run: |
             cmd /c "start chrome.exe https://data.nephobox.com/issue/terabox/PCTeraBox/Terabox_1.16.0.18.exe"
-            start-sleep -Seconds 30
+            start-sleep -Seconds 35
             cmd /c "C:\Users\runneradmin\Downloads\Terabox_1.16.0.18.exe /S"
  
       - name: Ready
